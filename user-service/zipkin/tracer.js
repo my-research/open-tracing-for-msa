@@ -1,6 +1,5 @@
 const {Tracer, ExplicitContext, BatchRecorder, jsonEncoder} = require('zipkin');
 const {HttpLogger} = require('zipkin-transport-http');
-const zipkinMiddleware = require('zipkin-instrumentation-express').expressMiddleware;
 
 const ZIPKIN_ENDPOINT = "http://localhost:9411";
 

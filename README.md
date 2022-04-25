@@ -1,6 +1,6 @@
 # Open Tracing In Msa
 
-마이크로서비스에서 분산 추적 환경에 대한 PoC
+Polygrat 한 마이크로서비스에서 분산 추적 환경에 대한 PoC
 
 ## Microservices
 
