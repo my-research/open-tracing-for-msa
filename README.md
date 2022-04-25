@@ -13,3 +13,19 @@
 # 호출 Flow
 
 - User -> Order -> Delivery -> Delivery Queue
+
+## User-Service
+
+Node Express Server
+
+### npm dependencies
+
+```bash
+npm install --save express
+npm install --save node-fetch
+npm install --save zipkin
+npm install --save zipkin-context-cls
+npm install --save zipkin-instrumentation-express
+npm install --save zipkin-instrumentation-fetch
+npm install --save zipkin-transport-http
+```
