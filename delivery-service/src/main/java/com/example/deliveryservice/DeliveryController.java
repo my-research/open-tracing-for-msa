@@ -9,10 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DeliveryController {
     @PostMapping("/delivery")
-    public String delivery(@RequestBody DeliveryRequest request) throws Exception {
+    public String delivery(@RequestBody DeliveryRequest request) {
         String userId = request.getUserId();
         String address = request.getAddress();
-        throw new Exception();
-        // return "[delivery-service] userId: " + userId + " address: " + address + " 배송 요청 완료";
+        return "[delivery-service] userId: " + userId + " address: " + address + " 배송 요청 완료";
     }
 }

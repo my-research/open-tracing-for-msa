@@ -22,10 +22,15 @@ Node Express Server
 
 ```bash
 npm install --save express
-npm install --save node-fetch
+npm install --save axios
+
 npm install --save zipkin
 npm install --save zipkin-context-cls
 npm install --save zipkin-instrumentation-express
 npm install --save zipkin-instrumentation-fetch
 npm install --save zipkin-transport-http
 ```
+
+### references
+
+- [tracing-express-service](https://medium.com/trabe/tracing-express-services-with-zipkin-js-6e5c5680467e)
