@@ -24,7 +24,7 @@ const tracer = new Tracer({
 const app = express();
 app.use(zipkinMiddleware({tracer}));
 
-const zipkinAxios = zipkinInstrumentationAxios(axios, { tracer, serviceName: "axios-client" });
+const zipkinAxios = zipkinInstrumentationAxios(axios, { tracer, serviceName: "user-service" });
 
 app.get('/', async (req, res) => {
 	const result = await zipkinAxios.get(`${ORDER_SERVICE_ENDPOINT}`);

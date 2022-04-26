@@ -16,6 +16,6 @@
     "zipkin-instrumentation-axios": "^0.1.0",
     "zipkin-instrumentation-express": "^0.22.0",
     "zipkin-instrumentation-fetch": "^0.22.0",
-    "zipkin-transport-http": "^0.22.0"
+    "zipkin-transport-http": "0.18.4"
   }
 }
