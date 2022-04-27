@@ -45,10 +45,15 @@ Spring Boot 로 구성된 서버
 
 Srping Boot 로 구성된 서버
 
-> order-service 로부터 받은 message 를 notification-queue 로 Message 를 publish 한다
+- HTTP API 서버
+- Message Producer
+
+> order-service 로부터 받은 message 를 notification-queue 로 Message 를 produce 한다
 
 # notification-consumer
 
 AWS SQS Listener
+
+- Message Consumer
 
 > notification-queue 에 남아있는 message 를 consume 한다

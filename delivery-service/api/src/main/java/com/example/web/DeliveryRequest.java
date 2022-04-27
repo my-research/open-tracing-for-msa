@@ -1,4 +1,4 @@
-package com.example.api.web;
+package com.example.web;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

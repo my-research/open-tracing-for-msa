@@ -22,10 +22,6 @@ dependencies {
 	// spring boot
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 
-	implementation('io.awspring.cloud:spring-cloud-starter-aws-messaging:2.4.1') {
-		exclude group: 'com.amazonaws', module: 'aws-java-sdk-s3'
-	}
-
 	// sleuth
 	implementation 'org.springframework.cloud:spring-cloud-starter-sleuth:3.1.1'
 	implementation 'org.springframework.cloud:spring-cloud-sleuth-zipkin:3.1.1'
