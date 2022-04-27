@@ -45,7 +45,7 @@ Spring Boot 로 구성된 서버
 
 Srping Boot 로 구성된 서버
 
-> notification-queue 로 Message 를 publish 한다
+> order-service 로부터 받은 message 를 notification-queue 로 Message 를 publish 한다
 
 # notification-consumer
 
