@@ -1,4 +1,4 @@
-package com.example;
+package com.example.notificationservice;
 
 import brave.Tracing;
 import brave.instrumentation.aws.sqs.SqsMessageTracing;

@@ -1,8 +1,8 @@
 package com.example;
 
-import io.awspring.cloud.messaging.core.QueueMessagingTemplate;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.aws.messaging.core.QueueMessagingTemplate;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,0 +1,17 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: notification-consumer-service
+  zipkin:
+    base-url: http://localhost:9411
+
+aws:
+  queue:
+    name: ZIPKIN-TEST-QUEUE-2
+    #name-2: ZIPKIN-TEST-QUEUE
+cloud:
+  aws:
+    region:
+      static: ap-northeast-2

@@ -23,9 +23,8 @@ dependencies {
     annotationProcessor 'org.projectlombok:lombok'
 
     // aws sqs
-    implementation('io.awspring.cloud:spring-cloud-starter-aws-messaging:2.4.1') {
-        exclude group: 'com.amazonaws', module: 'aws-java-sdk-s3'
-    }
+    // aws sqs
+    implementation 'org.springframework.cloud:spring-cloud-aws-messaging:2.2.6.RELEASE'
 }
 
 test {

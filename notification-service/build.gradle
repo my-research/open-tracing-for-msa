@@ -6,7 +6,6 @@ plugins {
 
 group = 'com.example'
 version = '0.0.1-SNAPSHOT'
-sourceCompatibility = '11'
 
 configurations {
     compileOnly {
@@ -19,12 +18,23 @@ repositories {
 }
 
 dependencies {
-    implementation 'org.springframework.boot:spring-boot-starter'
+
+    // spring boot
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // sleuth
+    implementation 'org.springframework.cloud:spring-cloud-starter-sleuth:3.1.1'
+    implementation 'org.springframework.cloud:spring-cloud-sleuth-zipkin:3.1.1'
+    implementation 'io.zipkin.aws:brave-instrumentation-aws-java-sdk-sqs:0.23.4'
+
+    // lombok
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    // aws sqs
+    implementation 'org.springframework.cloud:spring-cloud-aws-messaging:2.2.6.RELEASE'
 }
 
-tasks.named('test') {
+test {
     useJUnitPlatform()
 }

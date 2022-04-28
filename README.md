@@ -46,14 +46,16 @@ Spring Boot 로 구성된 서버
 Srping Boot 로 구성된 서버
 
 - HTTP API 서버
-- Message Producer
+- AWS SQS Message Producer
 
 > order-service 로부터 받은 message 를 notification-queue 로 Message 를 produce 한다
 
 # notification-consumer
 
-AWS SQS Listener
+Spring Boot 의 AWS SQS Listener 서버
 
-- Message Consumer
+- AWS SQS Message Consumer
+  - 커스텀 zipkin reporter 를 이용한다
+    - [zipkin-reporter-java-github](https://github.com/openzipkin/zipkin-reporter-java)
 
 > notification-queue 에 남아있는 message 를 consume 한다

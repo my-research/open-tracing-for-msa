@@ -21,13 +21,12 @@ dependencies {
     // sleuth
     implementation 'org.springframework.cloud:spring-cloud-starter-sleuth:3.1.1'
     implementation 'org.springframework.cloud:spring-cloud-sleuth-zipkin:3.1.1'
+    implementation 'io.zipkin.aws:brave-instrumentation-aws-java-sdk-sqs:0.23.4'
 
     // lombok
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
 
-    // testing
-    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 test {
