@@ -13,6 +13,10 @@
 # 호출 Flow
 
 - User -> Order -> Delivery -> Notification Queue
+  - User(node) 에서 Order 로 GET 요청을 보낸다
+  - Order 에서 Delivery 로 POST 요청을 보낸다
+  - Delivery 에서 AWS SQS 로 Message 를 발행한다
+  - AWS SQS 에 존재하는 Message 를 Notification 이 소비한다
 
 # user-service
 
