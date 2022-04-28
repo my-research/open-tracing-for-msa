@@ -18,7 +18,7 @@
   - Delivery 에서 AWS SQS 로 Message 를 발행한다
   - AWS SQS 에 존재하는 Message 를 Notification 이 소비한다
 
-# user-service
+## user-service
 
 Node Express Server
 
@@ -39,13 +39,13 @@ npm install --save zipkin-transport-http
 
 - [tracing-express-service](https://medium.com/trabe/tracing-express-services-with-zipkin-js-6e5c5680467e)
 
-# order-service
+## order-service
 
 Spring Boot 로 구성된 서버
 
 > deliver-service 로 HTTP POST 요청을 보낸다
 
-# delivery-service
+## delivery-service
 
 Srping Boot 로 구성된 서버
 
@@ -54,7 +54,7 @@ Srping Boot 로 구성된 서버
 
 > order-service 로부터 받은 message 를 notification-queue 로 Message 를 produce 한다
 
-# notification-consumer
+## notification-consumer
 
 Spring Boot 의 AWS SQS Listener 서버
 

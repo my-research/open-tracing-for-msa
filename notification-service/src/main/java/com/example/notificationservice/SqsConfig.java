@@ -23,7 +23,7 @@ public class SqsConfig {
 
     @Bean
     public QueueMessagingTemplate queueMessagingTemplate() {
-        Tracing current = Tracing.current();
+        /*Tracing current = Tracing.current();
         SqsMessageTracing sqsMessageTracing = SqsMessageTracing.create(current);
 
         AmazonSQSAsync client = AmazonSQSAsyncClientBuilder.standard()
@@ -31,7 +31,12 @@ public class SqsConfig {
                 .withCredentials(new EnvironmentVariableCredentialsProvider())
                 .withRequestHandlers(sqsMessageTracing.requestHandler())
                 .build();
-
+        */
+        AmazonSQSAsync client = AmazonSQSAsyncClientBuilder.standard()
+                .withRegion(Regions.AP_NORTHEAST_2)
+                .withCredentials(new EnvironmentVariableCredentialsProvider())
+                // .withRequestHandlers(sqsMessageTracing.requestHandler())
+                .build();
         return new QueueMessagingTemplate(client);
     }
 }

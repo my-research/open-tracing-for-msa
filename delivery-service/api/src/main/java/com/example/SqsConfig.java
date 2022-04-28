@@ -23,6 +23,7 @@ public class SqsConfig {
     @Bean
     public QueueMessagingTemplate queueMessagingTemplate() {
         Tracing current = Tracing.current();
+
         SqsMessageTracing sqsMessageTracing = SqsMessageTracing.create(current);
 
         AmazonSQSAsync client = AmazonSQSAsyncClientBuilder.standard()
