@@ -14,6 +14,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class SqsConfig {
+
     Tracer tracer;
 
     public SqsConfig(Tracer tracer) {
