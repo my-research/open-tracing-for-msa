@@ -20,10 +20,5 @@ public class MessageReceiver {
     public void receiveMessage(String message, @Headers Map<String, MessageAttributeValue> sqsHeaders) {
 
         logger.info("[메시지 수신 완료] : " + message);
-
-
-        // messageSender.send(message);
-
-        logger.info("[메시지 송신 완료] : " + message);
     }
 }

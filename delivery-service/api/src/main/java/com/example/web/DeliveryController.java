@@ -17,7 +17,7 @@ public class DeliveryController {
         String userId = request.getUserId();
         String address = request.getAddress();
 
-        messageSender.send("배송 문자 발송 요청");
+        messageSender.send("배송 문자 발송 요청2");
 
         return "[delivery-service] userId: " + userId + " address: " + address + " 배송 요청 완료";
     }

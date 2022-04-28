@@ -10,8 +10,13 @@ spring:
 aws:
   queue:
     name: ZIPKIN-TEST-QUEUE-2
-    #name-2: ZIPKIN-TEST-QUEUE
+
 cloud:
   aws:
+    credentials:
+      access-key: ${AWS_ACCESS_KEY_ID}
+      secret-key: ${AWS_SECRET_ACCESS_KEY}
     region:
       static: ap-northeast-2
+    stack:
+      auto: false
