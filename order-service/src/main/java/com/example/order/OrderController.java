@@ -2,12 +2,14 @@ package com.example.order;
 
 import com.example.order.data.DeliveryRequest;
 import java.net.URI;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 import zipkin2.reporter.AsyncReporter;
 
 @RestController
+
 public class OrderController {
 
     private final RestTemplate rest;

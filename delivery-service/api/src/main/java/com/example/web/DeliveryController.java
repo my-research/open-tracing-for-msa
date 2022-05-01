@@ -22,12 +22,6 @@ public class DeliveryController {
         String userId = request.getUserId();
         String address = request.getAddress();
 
-        int minute = LocalDateTime.now().getMinute();
-
-        if (minute % 2 == 0) {
-            throw new RuntimeException();
-        }
-
         messageSender.send("배송 문자 발송 요청2");
 
         return "[delivery-service] userId: " + userId + " address: " + address + " 배송 요청 완료";
