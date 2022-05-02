@@ -1,3 +1,6 @@
+> 해당 레포지토리의 소스코드에 대한 설명은 [기술 블로그](https://wonit.tistory.com/623?category=854727) 에 정리되어있습니다.
+
+
 # Open Tracing In Msa
 
 **Zipkin** 을 활용하여 **Polygrat 한 마이크로서비스 환경**에 대한 분산 추적을 PoC 한다.
