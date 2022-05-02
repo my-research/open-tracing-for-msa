@@ -13,12 +13,8 @@ import org.springframework.stereotype.Service;
 @RequiredArgsConstructor
 public class MessageReceiver {
 
-    private final Logger logger = LoggerFactory.getLogger(MessageReceiver.class);
-    // private final MessageSender messageSender;
-
     @SqsListener("${aws.queue.name}")
     public void receiveMessage(String message, @Headers Map<String, MessageAttributeValue> sqsHeaders) {
-
-        logger.info("[메시지 수신 완료] : " + message);
+        System.out.println("메시지 수신 완료, message = " + message);
     }
 }
